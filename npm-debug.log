@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'specs' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose run-script [ 'prespecs', 'specs', 'postspecs' ]
+5 info lifecycle rps_js@1.0.0~prespecs: rps_js@1.0.0
+6 silly lifecycle rps_js@1.0.0~prespecs: no script for prespecs, continuing
+7 info lifecycle rps_js@1.0.0~specs: rps_js@1.0.0
+8 verbose lifecycle rps_js@1.0.0~specs: unsafe-perm in lifecycle true
+9 verbose lifecycle rps_js@1.0.0~specs: PATH: /usr/share/npm/bin/node-gyp-bin:/home/carla/projects/rps_js/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/home/carla/.rvm/gems/ruby-2.3.4/bin:/home/carla/.rvm/gems/ruby-2.3.4@global/bin:/home/carla/.rvm/rubies/ruby-2.3.4/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/carla/.rvm/bin:/home/carla/.yadr/bin:/home/carla/.yadr/bin/yadr
+10 verbose lifecycle rps_js@1.0.0~specs: CWD: /home/carla/projects/rps_js
+11 silly lifecycle rps_js@1.0.0~specs: Args: [ '-c', 'mocha --recursive  --reporter=spec spec' ]
+12 silly lifecycle rps_js@1.0.0~specs: Returned: code: 1  signal: null
+13 info lifecycle rps_js@1.0.0~specs: Failed to exec specs script
+14 verbose stack Error: rps_js@1.0.0 specs: `mocha --recursive  --reporter=spec spec`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:126:13)
+14 verbose stack     at EventEmitter.emit (events.js:214:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:126:13)
+14 verbose stack     at ChildProcess.emit (events.js:214:7)
+14 verbose stack     at maybeClose (internal/child_process.js:925:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+15 verbose pkgid rps_js@1.0.0
+16 verbose cwd /home/carla/projects/rps_js
+17 error Linux 4.18.0-17-generic
+18 error argv "/usr/bin/node" "/usr/bin/npm" "run" "specs"
+19 error node v8.10.0
+20 error npm  v3.5.2
+21 error code ELIFECYCLE
+22 error rps_js@1.0.0 specs: `mocha --recursive  --reporter=spec spec`
+22 error Exit status 1
+23 error Failed at the rps_js@1.0.0 specs script 'mocha --recursive  --reporter=spec spec'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the rps_js package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     mocha --recursive  --reporter=spec spec
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs rps_js
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls rps_js
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
