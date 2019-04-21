@@ -1,6 +1,6 @@
 require('../spec.helper')
 
-describe('Your test case description', () => {
+describe('Game', () => {
     // Setup
     let array
 

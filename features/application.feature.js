@@ -18,7 +18,14 @@ context('Your Description of the test scenario', () => {
   });
 
   // Example test
-  it('renders the correct page title', async () => {
-    expect(await browser.page.title()).to.eql('Puppeteer Mocha Scaffold');
-  });
+  it('clicking on the "Check1" button', async () => {
+    await browser.fillIn("input[id='value']", { with: "rock" })
+    await browser.clickOnButton("input[value='Check1']")
+
+    // hidden function for button here
+    // another clickOnButton, "check2" to display answer
+
+    let content = await browser.getContent("[id='display_answer']")
+    expect(content).to.eql('Fizz');
+  })
 });
