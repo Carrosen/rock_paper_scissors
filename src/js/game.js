@@ -1,7 +1,9 @@
 function Game() {
     this.check = (string) => {
-        if (check1 === check2) {
+        if (value1 === value2) {
             return 'Its a tie!';
+        } else {
+            return 'That is not the game pal, try "rock", "paper" or "scissors"';
         }
     }
 }
