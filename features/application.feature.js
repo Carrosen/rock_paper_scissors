@@ -24,11 +24,11 @@ context('Your Description of the test scenario', () => {
     
     await browser.fillIn("input[id='value2']", { with: "rock" })
     await browser.clickOnButton("input[value='Check2']")
-    
+
     // hidden function for button here
     // another clickOnButton, "check2" to display answer
 
     let content = await browser.getContent("[id='display_answer']")
-    expect(content).to.eql('its a tie!');
+    expect(content).to.eql('Its a tie!');
   })
 });
