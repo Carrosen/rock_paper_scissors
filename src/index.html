@@ -8,10 +8,10 @@
 </head>
 <body>
     <input type="text" id="value1">
-    <input type="submit" value="Check1" id="button1">
+    <input type="submit" value="Check" id="button1">
 
     <input type="text" id="value2">
-    <input type="submit" value="Check2" id="button2">
+    <input type="submit" value="Check" id="button2">
 
     <div id="display_answer"></div>
 
@@ -22,7 +22,6 @@
             document.addEventListener('DOMContentLoaded', () => {
                 let button1 = document.getElementById('button1')
                 let button2 = document.getElementById('button2')
-                // some kind of 
                 let displayDiv = document.getElementById('display_answer')
                 button1.addEventListener('click', () =>{
                 button2.addEventListener('click', () =>{
@@ -30,7 +29,7 @@
                     let Player1 = document.getElementById('value1').value
                     let Player2 = document.getElementById('value2').value
                     let game = new Game
-                    let result = game.check(value, value)
+                    let result = game.check(Player1, Player2)
                     displayDiv.innerHTML = result;
                     })
                 })

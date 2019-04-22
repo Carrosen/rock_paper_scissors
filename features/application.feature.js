@@ -18,17 +18,17 @@ context('Your Description of the test scenario', () => {
   });
 
   // Example test
-  it('clicking on the "Check1" button', async () => {
-    await browser.fillIn("input[id='Player1']", { with: "rock" })
-    await browser.clickOnButton("input[value='Check1']")
-    
-    await browser.fillIn("input[id='Player2']", { with: "rock" })
-    await browser.clickOnButton("input[value='Check2']")
-
+  it('clicking on the "Check" button', async () => {
+    await browser.fillIn("input[id='value1']", { with: "rock" })
+    await browser.clickOnButton("input[value='Check']")
     // hidden function for button here
     // another clickOnButton, "check2" to display answer
-
+    await browser.fillIn("input[id='value2']", { with: "rock" })
+    await browser.clickOnButton("input[value='Check']")
     let content = await browser.getContent("[id='display_answer']")
+    // let compare = await browser.compareContent
     expect(content).to.eql('Its a tie!');
+
   })
+
 });
