@@ -25,8 +25,10 @@ context('Your Description of the test scenario', () => {
     // another clickOnButton, "check2" to display answer
     await browser.fillIn("input[id='value2']", { with: "rock" })
     await browser.clickOnButton("input[value='Check']")
+        // SOMETHING LIKE 
+        // await browser.compareContent("input[id='compare']")
     let content = await browser.getContent("[id='display_answer']")
-    // let compare = await browser.compareContent
+
     expect(content).to.eql('Its a tie!');
 
   })
