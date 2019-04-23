@@ -23,14 +23,3 @@
 - https://stackoverflow.com/questions/46920064/html-javascript-two-person-rock-paper-scissors-game
 
 
-## User stories
-
-As a Player1
-To play the game I would like to enter my choice
-for that i need a field to do that in
-
-
-Scenario: As a Player1
-Given I visit the site
-And I
-

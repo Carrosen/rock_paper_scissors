@@ -28,7 +28,6 @@ context('Your Description of the test scenario', () => {
         // SOMETHING LIKE 
         // await browser.compareContent("input[id='compare']")
     let content = await browser.getContent("[id='display_answer']")
-
     expect(content).to.eql('Its a tie!');
 
   })
