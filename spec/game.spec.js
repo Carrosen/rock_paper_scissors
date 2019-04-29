@@ -48,6 +48,10 @@ describe('Game', () => {
             expect(game.check('scissors', 'rock')).to.eql('Player2 is the winner!')
         })
 
+        it('returns Player2 is the winner if Player2 enters "paper"', () => {
+            expect(game.check('rock', 'paper')).to.eql('Player2 is the winner!')
+        })
+
 
       })
     })
