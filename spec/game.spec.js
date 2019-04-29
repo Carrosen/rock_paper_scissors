@@ -57,36 +57,27 @@ describe('Game', () => {
         })
 
 
-      })
     })
 
-//         it('returns Player2 is the winner if Player2 enters "rock" and Player1 enters "scissors"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player2 is the winner!")
-//         })
 
-//         it('returns Player2 is the winner if Player2 enters "paper" and Player1 enters "rock"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player2 is the winner!")
-//         })
-
-//         it('returns Player2 is the winner if Player2 enters "scissors" and Player1 enters "paper"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player2 is the winner!")
-//         })
-//     })
-
-//     describe('Its a tie!', () => {
+    describe('Its a tie!', () => {
         
-//         it('returns Its a tie! if Player1 == Player2', () => {
-//             expect(game.check(Player1 == Player2)).to.eql("Its a tie!")
-//         })
+    //     it('returns Its a tie! if Player1 === Player2', () => {
+    //         expect(game.check(Player1 === Player2)).to.eql("Its a tie!")
+    //     })
 
-//     })
-
-// })
+    // })
 
 
-//         it('returns Its a tie! if Player1 enters "rock"', () => {
-//             expect(game.check(Player2)).to.eql("rock")
-//         })
+        it('returns Its a tie! if Player1 enters "rock"', () => {
+            expect(game.check('rock', 'rock')).to.eql("Its a tie!")
+        })
+
+    })
+
+})
+
+
 
 //         it('returns Its a tie! if Player1 enters "paper"', () => {
 //             expect(game.check(Player2)).to.eql("paper")
@@ -97,25 +88,3 @@ describe('Game', () => {
 //         })
         
 //  })
-
-
-
-
-        // it('returns Player1 is the winner if Player1 enters "rock"', () => {
-        //     expect(game.check('rock', 'scissors')).to.eql('Player1 is the winner!')
-        // })
-
-
-
-//         it('returns Player1 is the winner if Player1 enters "rock" and Player2 enters "scissors"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player1 is the winner!")
-//         })
-
-//         it('returns Player1 is the winner if Player1 enters "paper" and Player2 enters "rock"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player1 is the winner!")
-//         })
-
-//         it('returns Player1 is the winner if Player1 enters "scissors" and Player2 enters "paper"', () => {
-//             expect(game.check(Player1, Player2)).to.eql("Player1 is the winner!")
-//         })
-//     })
