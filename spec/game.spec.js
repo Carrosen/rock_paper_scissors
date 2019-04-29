@@ -73,6 +73,9 @@ describe('Game', () => {
             expect(game.check('rock', 'rock')).to.eql("Its a tie!")
         })
 
+        it('returns Its a tie! if Player1 enters "paper"', () => {
+            expect(game.check('paper', 'paper')).to.eql("Its a tie!")
+        })
     })
 
 })
