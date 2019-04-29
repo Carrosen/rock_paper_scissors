@@ -15,9 +15,6 @@ const { Game } = require('../spec.helper')
 // })
 
 
-// //     it('returns Player one is the winner! )
-
-
 describe('Game', () => {
     let game = new Game
 
@@ -61,14 +58,7 @@ describe('Game', () => {
 
 
     describe('Its a tie!', () => {
-        
-    //     it('returns Its a tie! if Player1 === Player2', () => {
-    //         expect(game.check(Player1 === Player2)).to.eql("Its a tie!")
-    //     })
-
-    // })
-
-
+    
         it('returns Its a tie! if Player1 enters "rock"', () => {
             expect(game.check('rock', 'rock')).to.eql("Its a tie!")
         })
@@ -76,18 +66,14 @@ describe('Game', () => {
         it('returns Its a tie! if Player1 enters "paper"', () => {
             expect(game.check('paper', 'paper')).to.eql("Its a tie!")
         })
+
+        it('returns Its a tie! if Player1 enters "scissors"', () => {
+            expect(game.check('scissors', 'scissors')).to.eql("Its a tie!")
+        })
     })
 
 })
 
-
-
-//         it('returns Its a tie! if Player1 enters "paper"', () => {
-//             expect(game.check(Player2)).to.eql("paper")
-//         })
-
-//         it('returns Its a tie! if Player1 enters "scissors"', () => {
-//             expect(game.check(Player2)).to.eql("scissors")
-//         })
-        
-//  })
+    //     it('returns Its a tie! if Player1 === Player2', () => {
+    //         expect(game.check(Player1 === Player2)).to.eql("Its a tie!")
+    //     })
