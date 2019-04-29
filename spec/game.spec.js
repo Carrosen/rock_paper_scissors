@@ -39,10 +39,18 @@ describe('Game', () => {
 
     })
 
-})
+
 
     
-//     describe('Player2 wins', () => {
+      describe('Player2 wins', () => {
+
+        it('returns Player2 is the winner if Player2 enters "rock"', () => {
+            expect(game.check('scissors', 'rock')).to.eql('Player2 is the winner!')
+        })
+
+
+      })
+    })
 
 //         it('returns Player2 is the winner if Player2 enters "rock" and Player1 enters "scissors"', () => {
 //             expect(game.check(Player1, Player2)).to.eql("Player2 is the winner!")
