@@ -20,4 +20,4 @@
 
 ### With inspiration from
 
-- https://stackoverflow.com/questions/46920064/html-javascript-two-person-rock-paper-scissors-game
+* https://stackoverflow.com/questions/46920064/html-javascript-two-person-rock-paper-scissors-game

@@ -16,9 +16,8 @@
     <input type="submit" value="Check" id="button3">
     </div>
 
-    <input type="submit" value="Play again" id="playagainButton">
 
-
+    
 
 </body>
 
@@ -33,15 +32,8 @@
                     let game = new Game
                     let result = game.check(value1, value2)
                     displayDiv.innerHTML = result;
-
-                    let playagainButton = document.getElementById('playagainButton')
-                    playagainButton.addEventListener("click", () => {
-                        count = 0
-                        document.getElementById('value1').innerHTML = 0
-                        document.getElementById('value2').innerHTML = 0
                     })
                 })
-            })
         
         </script>
 
