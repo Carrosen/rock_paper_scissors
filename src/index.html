@@ -7,28 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <title>ROCK PAPER SCISSORS</title>
 </head>
-<body class="bg-teal-darker">
-    <h1>ROCK | PAPER | SCISSORS</h1>
-    <img src="rps3.jpg" alt="RPS">
-    <h2>GAME</h2>
+    <body class="bg-teal-darker">
 
-    <div>
-        <p>Player 1</p>
-        <input type="text" id="value1">
-        <input type="submit" value="Check" id="button1">
-    </div>
+        <div class="flex items-stretch justify-center">
+            <div>
+            <h1>ROCK</h1><br></br>
+            <h1>PAPER</h1><br></br>
+            <h1>SCISSORS</h1>
+            </div>
 
-    <img src="rps3.jpg" alt="RPS">
+            <img src="rps3.jpg" alt="RPS" height="200" width="180" style="max-height: 200px;">
 
-    <div>
-        <p>Player 2</p>
-        <input type="text" id="value2">
-        <input type="submit" value="Check" id="button2">
-    </div><br></br>
+        </div>
 
-    <div id="display_answer">
-    <input type="submit" value="Check" id="button3">
-    </div>
+        <div class="flex items-stretch justify-center">
+            <div>
+                <p>Player 1</p>
+                    <input type="text" id="value1">
+                    <input type="submit" value="Check" id="button1">
+            </div>
+
+            <div>
+                <p>Player 2</p>
+                    <input type="text" id="value2">
+                    <input type="submit" value="Check" id="button2">
+            </div><br></br>
+
+        </div>
+
+            <div id="display_answer">
+                <input type="submit" value="Check" id="button3">
+            </div>
+
+
 
     <input type="submit" value="Play again" id="resetbutton">
 
