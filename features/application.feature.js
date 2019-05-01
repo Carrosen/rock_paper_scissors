@@ -15,9 +15,9 @@ context('Your Description of the test scenario', () => {
   });
 
   it('clicking on the "Check" button', async () => {
-    await browser.fillIn("input[id='value1']", { with: "rock" })
+    await browser.fillIn("select[id='value1']", { with: "rock" })
     await browser.clickOnButton("#button1")
-    await browser.fillIn("input[id='value2']", { with: "rock" })
+    await browser.fillIn("select[id='value2']", { with: "rock" })
     await browser.clickOnButton("#button2")
     await browser.clickOnButton("#button3")
     let content = await browser.getContent("[id='display_answer']")
