@@ -32,10 +32,8 @@
 
 
 
-    <input type="submit" value="Play again" id="resetbutton">
+    <button type="submit"  onClick="refreshPage()">Refresh Button</button>
 
-
-    
 
 </body>
 
@@ -52,6 +50,10 @@
                     displayDiv.innerHTML = result;
                     })
                 })
+
+                function refreshPage(){
+    window.location.reload();
+} 
         
         </script>
 
