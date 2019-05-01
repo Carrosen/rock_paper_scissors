@@ -23,3 +23,5 @@
 * https://stackoverflow.com/questions/46920064/html-javascript-two-person-rock-paper-scissors-game
 
 * Valuable input from [raptorf1](https://github.com/raptorf1)
+
+* The previous co-horts
