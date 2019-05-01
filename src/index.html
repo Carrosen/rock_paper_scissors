@@ -7,54 +7,28 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <title>ROCK PAPER SCISSORS</title>
 </head>
-    <body class="bg-teal-darker">
+<body class="bg-teal-darker">
+    <h1>ROCK | PAPER | SCISSORS</h1>
+    <img src="rps3.jpg" alt="RPS">
+    <h2>GAME</h2>
 
-        <div class="flex items-stretch justify-center justify-around">
-            <div>
-                <h1>ROCK</h1><br></br>
-                <h1>PAPER</h1><br></br>
-                <h1>SCISSORS</h1>
-            </div>
+    <div>
+        <p>Player 1</p>
+        <input type="text" id="value1">
+        <input type="submit" value="Check" id="button1">
+    </div>
 
-            <img src="rps3.jpg" alt="RPS" height="200" width="180" style="max-height: 200px;">
+    <img src="rps3.jpg" alt="RPS">
 
-        </div>
+    <div>
+        <p>Player 2</p>
+        <input type="text" id="value2">
+        <input type="submit" value="Check" id="button2">
+    </div><br></br>
 
-
-            <div class="flex items-stretch justify-center justify-around"">
-                <div>
-                    <form>
-                        <div class="flex items-stretch justify-center w-full max-w-sm">
-                            <div class="flex items-center border-b border-b-2 border-teal py-2">
-                                    <input class="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Player 1: Enter answer here" id="value1">
-                                    
-                                    <button class="flex-no-shrink bg-teal hover:bg-teal-dark border-teal hover:border-teal-dark text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Check" id="button1">
-                                        PLAY
-                                    </button>
-                            </div>
-                    </form>
-                </div>
-
-                <div>
-                    <form>
-                        <div class="flex items-stretch justify-center w-full max-w-sm">
-                            <div class="flex items-center border-b border-b-2 border-teal py-2">
-                                    <input class="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Player 2: Enter answer here" id="value2">
-                                    
-                                    <button class="flex-no-shrink bg-teal hover:bg-teal-dark border-teal hover:border-teal-dark text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Check" id="button2">
-                                        PLAY
-                                    </button>
-                            </div>
-                    </form>
-                </div>
-            </div>
-
-            <div id="display_answer">
-            <button class="flex-no-shrink bg-teal hover:bg-teal-dark border-teal hover:border-teal-dark text-sm border-4 text-white py-1 px-2 rounded" type="submit" value="Check" id="button3">
-                    WHO'S THE WINNER?
-                </button>
-
-            </div>
+    <div id="display_answer">
+    <input type="submit" value="Check" id="button3">
+    </div>
 
 
 
