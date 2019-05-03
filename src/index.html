@@ -14,9 +14,10 @@
     </div>
     <h2>GAME</h2>
 
-    <div>
-        <p>Player 1</p>
-            <select id="value1">
+   <div class="flex items-strech flex-wrap mb-4 mt-2 justify-center">
+    <div class="inline-block relative w-64 lg:w-2/4">
+        <p class="text-xl">Player 1</p>
+            <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value1">
                 <option value="Choose">Select option</option>
                 <option value="rock">rock</option>
                 <option value="paper">paper</option>
@@ -28,9 +29,9 @@
  
     </div>
 
-    <div>
-        <p>Player 2</p>
-            <select id="value2">
+    <div class="inline-block relative w-64 lg:w-2/4">
+        <p class="text-xl">Player 2</p>
+            <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value2">
                 <option value="Choose">Select option</option>
                 <option value="rock">rock</option>
                 <option value="paper">paper</option>
@@ -40,14 +41,15 @@
         <button onClick="hide2()" id="button2">Hide choosen option</button>
 
     </div><br></br>
+</div>
 
 
 
 
 
 
-    <div id="display_answer">
-    <input type="submit" value="Check" id="button3">
+    <div class="text-white" id="display_answer">
+    <input class="bg-teal hover:bg-teal-light text-white font-bold py-4 px-8 rounded-full" type="submit" value="Check" id="button3">
     </div>
 
 
