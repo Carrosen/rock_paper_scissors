@@ -11,6 +11,9 @@
 
 ---
 
+## Deployed site
+View [here](https://rock-paper-scissors-carrosen.netlify.com/)
+
 ## Game rules
 ### R > S
 ### S > P
