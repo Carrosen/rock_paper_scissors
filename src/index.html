@@ -8,86 +8,75 @@
     <title>ROCK PAPER SCISSORS</title>
 </head>
 <body class="bg-teal-darker">
-    <h1>ROCK | PAPER | SCISSORS</h1>
-    <div class="bg-white items-center">
-        <img src="rps4.jpg" alt="RPS" width="300"style="h-auto">
-    </div>
-    <h2>GAME</h2>
+  <h1>ROCK | PAPER | SCISSORS</h1>
+  
+  <div class="bg-white items-center">
+      <img src="rps.jpg" alt="RPS" width="300"style="h-auto">
+  </div>
 
-   <div class="flex items-strech flex-wrap mb-4 mt-2 justify-center">
+  <h2>GAME</h2>
+
+  <div class="flex items-strech flex-wrap mb-4 mt-2 justify-center">
     <div class="inline-block relative w-64 lg:w-2/4">
-        <p class="text-xl">Player 1</p>
-            <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value1">
-                <option value="Choose">Select option</option>
-                <option value="rock">rock</option>
-                <option value="paper">paper</option>
-                <option value="scissors">scissors</option>
-            </select>
-        
+      <p class="text-xl">Player 1</p>
+        <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value1">
+          <option value="Choose">Select option</option>
+          <option value="rock">rock</option>
+          <option value="paper">paper</option>
+          <option value="scissors">scissors</option>
+        </select>
+      
         <button onClick="hide1()" id="button1">Hide choosen option</button>
-
- 
     </div>
 
-    <div class="inline-block relative w-64 lg:w-2/4">
-        <p class="text-xl">Player 2</p>
-            <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value2">
-                <option value="Choose">Select option</option>
-                <option value="rock">rock</option>
-                <option value="paper">paper</option>
-                <option value="scissors">scissors</option>
-            </select>
+  <div class="inline-block relative w-64 lg:w-2/4">
+    <p class="text-xl">Player 2</p>
+      <select class="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value2">
+          <option value="Choose">Select option</option>
+          <option value="rock">rock</option>
+          <option value="paper">paper</option>
+          <option value="scissors">scissors</option>
+      </select>
     
-        <button onClick="hide2()" id="button2">Hide choosen option</button>
+      <button onClick="hide2()" id="button2">Hide choosen option</button>
+    </div>
+    <br></br>
+  </div>
 
-    </div><br></br>
-</div>
-
-
-
-
-
-
-    <div class="text-white" id="display_answer">
+  <div class="text-black" id="display_answer">
     <input class="bg-teal hover:bg-teal-light text-white font-bold py-4 px-8 rounded-full" type="submit" value="Check" id="button3">
-    </div>
+  </div>
 
+  <button type="submit" onClick="refreshPage()">Play again</button>
 
+  <script src="./js/game.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let button = document.getElementById('button3')
+      let displayDiv = document.getElementById('display_answer')
+      button.addEventListener('click', () =>{
+        let value1 = document.getElementById('value1').value
+        let value2 = document.getElementById('value2').value
+        let game = new Game
+        let result = game.check(value1, value2)
+        displayDiv.innerHTML = result;
+        })
+      })
 
-    <button type="submit" onClick="refreshPage()">Play again</button>
+      function refreshPage(){
+          window.location.reload();
+      } 
 
+      hide1 = () => {
+          document.getElementById('value1').style.visibility ="hidden";
+          document.getElementById('button1').innerHTML ="waiting for Player 2";
+      }
 
+      hide2 = () => {
+          document.getElementById('value2').style.visibility ="hidden";
+          document.getElementById('button2').innerHTML ="Press Check to see the result";
+      }
+  </script>
 
-    <script src="./js/game.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            let button = document.getElementById('button3')
-            let displayDiv = document.getElementById('display_answer')
-            button.addEventListener('click', () =>{
-                let value1 = document.getElementById('value1').value
-                let value2 = document.getElementById('value2').value
-                let game = new Game
-                let result = game.check(value1, value2)
-                displayDiv.innerHTML = result;
-                })
-            })
-
-        function refreshPage(){
-            window.location.reload();
-        } 
-
-        hide1 = () => {
-            document.getElementById('value1').style.visibility ="hidden";
-            document.getElementById('button1').innerHTML ="waiting for Player 2";
-        }
-
-        hide2 = () => {
-            document.getElementById('value2').style.visibility ="hidden";
-            document.getElementById('button2').innerHTML ="Press Check to see the result";
-        }
-    
-    </script>
-
-</body>
-
+  </body>
 </html>

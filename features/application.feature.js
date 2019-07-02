@@ -23,5 +23,4 @@ context('Your Description of the test scenario', () => {
     let content = await browser.getContent("[id='display_answer']")
     expect(content).to.eql('Its a tie!');
   })
-
 });
