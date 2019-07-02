@@ -1,9 +1,12 @@
 function Game() {
   this.check = (Player1, Player2) => {
 
-    if (Player1 === Player2) {
-      return 'Its a tie!';
+    if (Player1 === '' && Player2 === '') {
+      return 'You need to select an option';
     } 
+    else if (Player1 === Player2) {
+      return 'Its a tie!';
+    }
 
     else if ((Player1 === "rock") && (Player2 === "scissors")) {
       return 'Player1 is the winner!';

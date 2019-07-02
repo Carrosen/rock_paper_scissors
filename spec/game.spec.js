@@ -3,8 +3,12 @@ const { Game } = require('../spec.helper')
 describe('Game', () => {
   let game = new Game
 
+  // it('returns a string if no game rules are met', () => {
+  //   expect(game.check("bajs")).to.eql('That is not the game pal, try "rock", "paper" or "scissors"')
+  // })
+
   it('returns a string if no game rules are met', () => {
-    expect(game.check("bajs")).to.eql('That is not the game pal, try "rock", "paper" or "scissors"')
+    expect(game.check('', '')).to.eql('You need to select an option')
   })
 
   describe('Player1 wins', () => {
