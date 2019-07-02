@@ -19,7 +19,6 @@ describe('Game', () => {
     it('returns Player1 is the winner if Player1 enters "scissors"', () => {
       expect(game.check('scissors', 'paper')).to.eql('Player1 is the winner!')
     })
-
   })
 
   describe('Player2 wins', () => {
@@ -34,8 +33,6 @@ describe('Game', () => {
     it('returns Player2 is the winner if Player2 enters "scissors"', () => {
       expect(game.check('paper', 'scissors')).to.eql('Player2 is the winner!')
     })
-
-
   })
 
   describe('Its a tie!', () => {
