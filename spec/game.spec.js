@@ -8,7 +8,7 @@ describe('Game', () => {
   // })
 
   it('returns a string if no game rules are met', () => {
-    expect(game.check('', '')).to.eql('You need to select an option')
+    expect(game.check(0, 0)).to.eql('You need to select an option')
   })
 
   describe('Player1 wins', () => {

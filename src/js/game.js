@@ -1,7 +1,7 @@
 function Game() {
   this.check = (Player1, Player2) => {
 
-    if (Player1 === '' && Player2 === '') {
+    if (Player1 === 0 && Player2 === 0) {
       return 'You need to select an option';
     } 
     else if (Player1 === Player2) {
