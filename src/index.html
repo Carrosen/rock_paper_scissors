@@ -18,41 +18,39 @@
   <div class="items-center flex flex-wrap justify-center">
     <div class="flex-1 text-gray-700 text-center px-4 py-2 m-2">
       <p class="text-xl">Player 1</p>
+      <div class="flex flex-wrap justify-center items-center">
         <select class="block appearance-none bg-white border border-grey-light hover:border-grey m-4 px-4 py-2 pl-4 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value1">
           <option value="Choose">Select option</option>
           <option value="rock">rock</option>
           <option value="paper">paper</option>
           <option value="scissors">scissors</option>
         </select>
+      </div>
       
         <button class="bg-white hover:bg-gray-100 text-gray-600 py-2 px-4 border border-gray-400 rounded shadow" onClick="hide1()" id="button1">Hide choosen option</button>
     </div>
 
   <div class="flex-1 text-gray-700 text-center px-4 py-2 m-2">
     <p class="text-xl">Player 2</p>
-    <div class="flex flex-wrap justify-center items-center">
-      <select class="block appearance-none bg-white border border-grey-light hover:border-grey m-4 px-4 py-2 pl-4 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value2">
-          <option value="Choose">Select option</option>
-          <option value="rock">rock</option>
-          <option value="paper">paper</option>
-          <option value="scissors">scissors</option>
-      </select>
+      <div class="flex flex-wrap justify-center items-center">
+        <select class="block appearance-none bg-white border border-grey-light hover:border-grey m-4 px-4 py-2 pl-4 rounded shadow leading-tight focus:outline-none focus:shadow-outline" id="value2">
+            <option value="Choose">Select option</option>
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+      </div>
+      <button class="bg-white hover:bg-gray-100 text-gray-600 py-2 px-4 border border-gray-400 m-4 rounded shadow" onClick="hide2()" id="button2">Hide choosen option</button>
     </div>
-    
-      <button class="bg-white hover:bg-gray-100 text-gray-600 py-2 px-4 border border-gray-400 rounded shadow" onClick="hide2()" id="button2">Hide choosen option</button>
-    </div>
-    <br></br>
+
   </div>
 
   <div class="flex-1 text-gray-700 text-center px-4 py-2 m-2">
     <div class="text-teal-500 text-3xl" id="display_answer">
-      <input class="bg-teal hover:bg-teal-light text-white font-bold py-4 px-8 rounded-full" type="submit" value="Check" id="button3">
+      <input class="bg-teal hover:bg-teal-light text-white font-bold py-4 px-8 m-4 rounded-full" type="submit" value="Check" id="button3">
     </div>
-  
-  <br></br>
-
-  <button type="submit" onClick="refreshPage()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Play again</button>
-</div>
+    <button type="submit" onClick="refreshPage()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Play again</button>
+  </div>
 
   <script src="./js/game.js"></script>
   <script>
