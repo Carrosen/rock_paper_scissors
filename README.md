@@ -1,23 +1,27 @@
+# Rock, Paper, Scissors
 
+### This was a side-project for 2 weeks in late april / beginning of may
 
-                                         ROCK | PAPER | SCISSORS
-
-                                                THE GAME
-                            
-
-		        Player 1			|			Player 2
-	            [  Input field  ]				            [  Input field  ]
-	               [ Button1 ]				               [ Button2 ]
+You can find the deployed site [here](https://rock-paper-scissors-carrosen.netlify.com/)
 
 ---
 
-## Deployed site
-View [here](https://rock-paper-scissors-carrosen.netlify.com/)
-
 ## Game rules
-### R > S
-### S > P
-### P > R
+### ROCK > SCISSORS
+### SCISSORS > PAPER
+### PAPER > ROCK
+
+---
+
+## Built with
+* Javscript
+* HTML
+* Javascript
+
+## Tested with
+* [npm](https://www.npmjs.com/)
+* [End-To-End Testing Training Wheels](https://www.npmjs.com/package/e2e_training_wheels)
+
 
 ---
 
