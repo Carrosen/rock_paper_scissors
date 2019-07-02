@@ -3,39 +3,35 @@ const { Game } = require('../spec.helper')
 describe('Game', () => {
   let game = new Game
 
-  // it('returns a string if no game rules are met', () => {
-  //   expect(game.check("bajs")).to.eql('That is not the game pal, try "rock", "paper" or "scissors"')
-  // })
-
   it('returns a string if no game rules are met', () => {
-    expect(game.check(0, 0)).to.eql('You need to select an option')
+    expect(game.check('Choose', 'Choose')).to.eql('You need to select an option')
   })
 
   describe('Player1 wins', () => {
     it('returns Player1 is the winner if Player1 enters "rock"', () => {
-      expect(game.check('rock', 'scissors')).to.eql('Player1 is the winner!')
+      expect(game.check('rock', 'scissors')).to.eql('Player 1 is the winner!')
     })
 
     it('returns Player1 is the winner if Player1 enters "paper"', () => {
-      expect(game.check('paper', 'rock')).to.eql('Player1 is the winner!')
+      expect(game.check('paper', 'rock')).to.eql('Player 1 is the winner!')
     })
 
     it('returns Player1 is the winner if Player1 enters "scissors"', () => {
-      expect(game.check('scissors', 'paper')).to.eql('Player1 is the winner!')
+      expect(game.check('scissors', 'paper')).to.eql('Player 1 is the winner!')
     })
   })
 
   describe('Player2 wins', () => {
     it('returns Player2 is the winner if Player2 enters "rock"', () => {
-      expect(game.check('scissors', 'rock')).to.eql('Player2 is the winner!')
+      expect(game.check('scissors', 'rock')).to.eql('Player 2 is the winner!')
     })
 
     it('returns Player2 is the winner if Player2 enters "paper"', () => {
-      expect(game.check('rock', 'paper')).to.eql('Player2 is the winner!')
+      expect(game.check('rock', 'paper')).to.eql('Player 2 is the winner!')
     })
 
     it('returns Player2 is the winner if Player2 enters "scissors"', () => {
-      expect(game.check('paper', 'scissors')).to.eql('Player2 is the winner!')
+      expect(game.check('paper', 'scissors')).to.eql('Player 2 is the winner!')
     })
   })
 
@@ -52,4 +48,31 @@ describe('Game', () => {
       expect(game.check('scissors', 'scissors')).to.eql("Its a tie!")
     })
   })
+
+  describe('You need to select an option', () => {
+    it('returns string if Player1 does not enter an option', () => {
+      expect(game.check('Choose', 'rock')).to.eql("You need to select an option")
+    })
+
+    it('returns string if Player1 does not enter an option', () => {
+      expect(game.check('Choose', 'paper')).to.eql("You need to select an option")
+    })
+
+    it('returns string if Player1 does not enter an option', () => {
+      expect(game.check('Choose', 'scissors')).to.eql("You need to select an option")
+    })
+
+    it('returns string if Player2 does not enter an option', () => {
+      expect(game.check('rock', 'Choose')).to.eql("You need to select an option")
+    })
+
+    it('returns string if Player2 does not enter an option', () => {
+      expect(game.check('paper', 'Choose')).to.eql("You need to select an option")
+    })
+
+    it('returns string if Player2 does not enter an option', () => {
+      expect(game.check('scissors', 'Choose')).to.eql("You need to select an option")
+    })
+  })
+
 })
