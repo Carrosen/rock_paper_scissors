@@ -14,9 +14,9 @@ You can find the deployed site [here](https://rock-paper-scissors-carrosen.netli
 ---
 
 ## Built with
-* Javscript
 * HTML
-* Javascript
+* CSS
+* JavaScript
 
 ## Tested with
 * [npm](https://www.npmjs.com/)
